@@ -1,0 +1,5 @@
+.feature-decoration {
+	display: inline-block;
+	text-transform: uppercase;
+	color: var(--light-green);
+}

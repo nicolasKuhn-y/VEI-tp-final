@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap");
+
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--light-blue: #3c64b1;
+	--cyan: #3e8989;
+	--light-green: #2ebe8c;
+	--dark-green: #292e1e;
+}
+
+body {
+	font-family: "Mulish", sans-serif;
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: var(--light-blue);
+	border-color: var(--light-blue);
+	border-radius: 50px;
+	font-weight: 700;
+}
+
+.btn-secondary {
+	color: #fff;
+	background-color: var(--light-green);
+	border-color: var(--light-green);
+	border-radius: 50px;
+	font-weight: 700;
+	transition: background-color 250ms ease-in;
+}
+
+.btn-secondary:hover {
+	background-color: var(--cyan);
+	border-color: var(--cyan);
+}
