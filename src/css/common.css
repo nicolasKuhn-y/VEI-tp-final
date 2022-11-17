@@ -13,10 +13,117 @@
 	--cyan: #3e8989;
 	--light-green: #2ebe8c;
 	--dark-green: #292e1e;
+	--grey: #9da6ba;
 }
 
 body {
-	font-family: "Mulish", sans-serif;
+	font-family: "inter", sans-serif;
+	background-color: #fafafa;
+	min-height: 100vh;
+}
+
+.bg-blue {
+	background-color: var(--light-blue);
+}
+
+.sticky-top {
+	position: sticky;
+	top: 1;
+	z-index: 1111;
+	background-color: #fff;
+}
+
+.scroll-paused {
+	height: 100%;
+	overflow: hidden;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.sidebar {
+	background-color: #fff;
+	position: fixed;
+	min-height: 100%;
+	width: 100%;
+	overflow: auto;
+	transform: translateX(-100%);
+	transition: transform 300ms ease-in-out;
+	z-index: 1111;
+}
+
+@media screen and (min-width: 700px) {
+	.sidebar {
+		height: 100vh;
+		position: initial;
+		overflow: initial;
+		max-width: 250px;
+		transform: translateX(0);
+	}
+}
+
+.sidebar.active {
+	transform: translateX(0);
+}
+
+.sidebar-list-item {
+	cursor: pointer;
+	transition: all 350ms;
+}
+
+.sidebar-list-item:hover {
+	border-radius: 10px;
+	background-color: #8675f4;
+}
+
+.sidebar-list-item:hover .sidebar-link,
+.sidebar-list-item:hover .sidebar-icon {
+	color: #ffffff;
+}
+
+.sidebar-icon {
+	color: #374957;
+}
+
+.sidebar-link {
+	font-size: 16px;
+	color: var(--grey);
+	font-weight: 600;
+}
+
+.course-ribbon {
+	position: absolute;
+	top: 0.8rem;
+	left: 0.8rem;
+	border-radius: 8px;
+	background-color: #8675f4;
+}
+.course-ribbon span {
+	font-size: 14px;
+	font-weight: 500;
+	color: #ffffff;
+}
+
+.course-subtitle {
+	font-size: 12px;
+	color: var(--grey);
+	font-weight: 500;
+}
+
+.message-title {
+	font-size: 24px;
+	font-size: 600;
+}
+
+.message-subtitle {
+	font-size: 14px;
+	color: var(--grey);
+	font-weight: 500;
+}
+
+.message-rounded {
+	border-radius: 0.5rem;
 }
 
 .btn-primary {
