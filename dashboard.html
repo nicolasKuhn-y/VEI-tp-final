@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dashboard</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./src/css/common.css" />
+		<link rel="stylesheet" href="./src/css/dashboard.css" />
+	</head>
+	<body>
+		<main class="d-md-flex">
+			<!---MOBILE MENU-->
+			<div
+				class="d-flex sticky-top d-md-none container justify-content-between align-items-center shadow p-3 px-4"
+			>
+				<img src="./src/images/logo.svg" alt="logo ong" />
+				<i class="fa-solid fa-bars fa-2x sidebar-handler"></i>
+			</div>
+			<!---MOBILE MENU-->
+
+			<!--SIDEBAR-->
+			<div class="sidebar">
+				<div class="d-flex flex-column flex-shrink-0 text-white py-md-5">
+					<img class="d-none d-md-block mx-4" src="./src/images/logo.svg" alt="logo ong" width="50" />
+					<ul class="nav nav-pills flex-column mb-auto p-3">
+						<li class="sidebar-list-item nav-item py-2 my-2">
+							<a class="d-flex align-items-center gap-3 px-2 nav-link" href="./dashboard.html">
+								<i class="fa-solid fa-house sidebar-icon"></i>
+								<span class="sidebar-link">Cursos</span>
+							</a>
+						</li>
+
+						<li class="sidebar-list-item nav-item py-2 my-2">
+							<a class="d-flex align-items-center gap-3 px-2 nav-link" href="#">
+								<i class="fa-solid fa-user sidebar-icon"></i>
+								<span class="sidebar-link">Estudiantes</span>
+							</a>
+						</li>
+
+						<li class="sidebar-list-item nav-item py-2 my-2">
+							<a class="d-flex align-items-center gap-3 px-2 nav-link" href="#">
+								<i class="fa-solid fa-message sidebar-icon"></i>
+								<span class="sidebar-link">Mensajes</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--SIDEBAR-->
+
+			<!--MAIN-CONTENT-->
+			<section class="container mt-4">
+				<div class="container text-end mb-2">
+					<i class="position-relative fa-regular fa-bell fa-lg ml-auto pointer">
+						<div class="red-circle"></div>
+					</i>
+				</div>
+
+				<div class="my-4 row">
+					<div class="col-md-8">
+						<div class="d-flex justify-content-md-between">
+							<h1 class="fw-bold mb-0">Mis cursos</h1>
+							<button class="d-none d-md-block btn btn-secondary">Crear curso</button>
+						</div>
+
+						<section class="row row-cols-1 row-cols-md-2 g-5 mt-2">
+							<div class="column">
+								<article class="card position-relative shadow">
+									<div class="p-2 px-3 course-ribbon">
+										<span>15 Lecciones</span>
+									</div>
+									<img
+										class="card-img-top"
+										src="./src/images/card-background.jpg"
+										alt="course image"
+									/>
+									<div class="card-body">
+										<h4 class="card-title fw-bold mb-0 fs-6">Introduccion al diseño UX/UI</h4>
+										<p class="card-text course-subtitle">Total de alumnos: 50</p>
+
+										<div class="d-flex justify-content-between mt-4">
+											<img
+												class="pointer"
+												src="./src/images/file-add.svg"
+												title="Añadir contenido"
+												alt="add file to course"
+											/>
+											<img
+												class="pointer"
+												src="./src/images/folder.svg"
+												title="Abrir contenidos de cursada"
+												alt="Open course folder"
+											/>
+											<img
+												class="pointer"
+												src="./src/images/add-user.svg"
+												title="Añadir estudiante"
+												alt="add user to course"
+											/>
+										</div>
+									</div>
+								</article>
+							</div>
+
+							<div class="column">
+								<article class="card position-relative shadow">
+									<div class="p-2 px-3 course-ribbon">
+										<span>15 Lecciones</span>
+									</div>
+									<img
+										class="card-img-top"
+										src="./src/images/card-background.jpg"
+										alt="course image"
+									/>
+									<div class="card-body">
+										<h4 class="card-title fw-bold mb-0 fs-6">Introduccion al diseño UX/UI</h4>
+										<p class="card-text course-subtitle">Total de alumnos: 50</p>
+
+										<div class="d-flex justify-content-between mt-4">
+											<img
+												class="pointer"
+												src="./src/images/file-add.svg"
+												title="Añadir contenido"
+												alt="add file to course"
+											/>
+											<img
+												class="pointer"
+												src="./src/images/folder.svg"
+												title="Abrir contenidos de cursada"
+												alt="Open course folder"
+											/>
+											<img
+												class="pointer"
+												src="./src/images/add-user.svg"
+												title="Añadir estudiante"
+												alt="add user to course"
+											/>
+										</div>
+									</div>
+								</article>
+							</div>
+
+							<div class="column">
+								<article class="card position-relative shadow">
+									<div class="p-2 px-3 course-ribbon">
+										<span>15 Lecciones</span>
+									</div>
+									<img
+										class="card-img-top"
+										src="./src/images/card-background.jpg"
+										alt="course image"
+									/>
+									<div class="card-body">
+										<h4 class="card-title fw-bold mb-0 fs-6">Introduccion al diseño UX/UI</h4>
+										<p class="card-text course-subtitle">Total de alumnos: 50</p>
+
+										<div class="d-flex justify-content-between mt-4">
+											<img
+												class="pointer"
+												src="./src/images/file-add.svg"
+												title="Añadir contenido"
+												alt="add file to course"
+											/>
+											<img
+												class="pointer"
+												src="./src/images/folder.svg"
+												title="Abrir contenidos de cursada"
+												alt="Open course folder"
+											/>
+											<img
+												class="pointer"
+												src="./src/images/add-user.svg"
+												title="Añadir estudiante"
+												alt="add user to course"
+											/>
+										</div>
+									</div>
+								</article>
+							</div>
+						</section>
+
+						<div class="d-md-none d-flex justify-content-center my-5">
+							<button class="btn btn-secondary">Crear curso</button>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<section class="shadow rounded p-3">
+							<div class="my-3">
+								<h4 class="message-title mb-0 fw-bold">Mensajes pendientes</h4>
+								<p class="message-subtitle">Ver todos</p>
+							</div>
+
+							<article class="d-flex p-2 my-3 bg-blue message-container pointer">
+								<img
+									class="rounded-circle align-self-center"
+									src="./src/images/user-example.png"
+									alt="user photo"
+									width="50"
+									height="50"
+								/>
+
+								<div class="text-white px-2 py-2">
+									<div>
+										<div class="d-flex justify-content-between">
+											<h6 class="mb-0 fs-6">Juan Carlos</h6>
+											<i class="fa-solid fa-arrow-right"></i>
+										</div>
+										<p class="mb-1" style="font-size: 10px">Diseño UX</p>
+									</div>
+									<p class="mb-0" style="font-size: 12px">
+										Le queria consultar acerca de lo que charlamos en la ultima...
+									</p>
+								</div>
+							</article>
+
+							<article class="d-flex p-2 my-3 bg-blue message-container pointer">
+								<img
+									class="rounded-circle align-self-center"
+									src="./src/images/user-example.png"
+									alt="user photo"
+									width="50"
+									height="50"
+								/>
+
+								<div class="text-white px-2 py-2">
+									<div>
+										<div class="d-flex justify-content-between">
+											<h6 class="mb-0 fs-6">Juan Carlos</h6>
+											<i class="fa-solid fa-arrow-right"></i>
+										</div>
+										<p class="mb-1" style="font-size: 10px">Diseño UX</p>
+									</div>
+									<p class="mb-0" style="font-size: 12px">
+										Le queria consultar acerca de lo que charlamos en la ultima...
+									</p>
+								</div>
+							</article>
+
+							<article class="d-flex p-2 my-3 bg-blue message-container pointer">
+								<img
+									class="rounded-circle align-self-center"
+									src="./src/images/user-example.png"
+									alt="user photo"
+									width="50"
+									height="50"
+								/>
+
+								<div class="text-white px-2 py-2">
+									<div>
+										<div class="d-flex justify-content-between">
+											<h6 class="mb-0 fs-6">Juan Carlos</h6>
+											<i class="fa-solid fa-arrow-right"></i>
+										</div>
+										<p class="mb-1" style="font-size: 10px">Diseño UX</p>
+									</div>
+									<p class="mb-0" style="font-size: 12px">
+										Le queria consultar acerca de lo que charlamos en la ultima...
+									</p>
+								</div>
+							</article>
+
+							<article class="d-flex p-2 my-3 bg-blue message-container pointer">
+								<img
+									class="rounded-circle align-self-center"
+									src="./src/images/user-example.png"
+									alt="user photo"
+									width="50"
+									height="50"
+								/>
+
+								<div class="text-white px-2 py-2">
+									<div>
+										<div class="d-flex justify-content-between">
+											<h6 class="mb-0 fs-6">Juan Carlos</h6>
+											<i class="fa-solid fa-arrow-right"></i>
+										</div>
+										<p class="mb-1" style="font-size: 10px">Diseño UX</p>
+									</div>
+									<p class="mb-0" style="font-size: 12px">
+										Le queria consultar acerca de lo que charlamos en la ultima...
+									</p>
+								</div>
+							</article>
+						</section>
+					</div>
+				</div>
+			</section>
+			<!--MAIN-CONTENT-->
+		</main>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://kit.fontawesome.com/227a11789b.js" crossorigin="anonymous"></script>
+		<script src="./src/js/sidebar.js"></script>
+	</body>
+</html>
