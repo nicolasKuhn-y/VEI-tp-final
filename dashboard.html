@@ -62,7 +62,7 @@
 			<!--SIDEBAR-->
 
 			<!--MAIN-CONTENT-->
-			<section class="container mt-4">
+			<section class="container mt-4 mx-md-5">
 				<div class="container text-end mb-2">
 					<i class="position-relative fa-regular fa-bell fa-lg ml-auto pointer">
 						<div class="red-circle"></div>
@@ -71,13 +71,57 @@
 
 				<div class="my-4 row">
 					<div class="col-md-8">
-						<div class="d-flex justify-content-md-between">
+						<div class="d-flex flex-column flex-md-row justify-content-md-between">
 							<h1 class="fw-bold mb-0">Mis cursos</h1>
-							<button class="d-none d-md-block btn btn-secondary">Crear curso</button>
+							<a href="./course-creator.html" class="d-inline-block mt-3 mt-md-0 unstyled-anchor">
+								<button class="btn btn-secondary">Crear curso</button>
+							</a>
 						</div>
 
-						<section class="row row-cols-1 row-cols-md-2 g-5 mt-2">
-							<div class="column">
+						<section class="row row-cols-1 row-cols-md-2 gy-5 g-md-5 mt-0 mt-md-2">
+							<div class="col">
+								<article class="card position-relative shadow">
+									<div class="p-2 px-3 course-ribbon">
+										<span>15 Lecciones</span>
+									</div>
+									<img
+										class="card-img-top"
+										src="./src/images/card-background.jpg"
+										alt="course image"
+									/>
+									<div class="card-body">
+										<h4 class="card-title fw-bold mb-0 fs-6">Introduccion al diseño UX/UI</h4>
+										<p class="card-text course-subtitle">Total de alumnos: 50</p>
+
+										<div class="d-flex justify-content-between mt-4">
+											<img
+												class="pointer"
+												src="./src/images/file-add.svg"
+												title="Añadir contenido"
+												alt="add file to course"
+											/>
+
+											<a href="./content-detail.html" class="unstyled-anchor">
+												<img
+													class="pointer"
+													src="./src/images/folder.svg"
+													title="Abrir contenidos de cursada"
+													alt="Open course folder"
+												/>
+											</a>
+
+											<img
+												class="pointer"
+												src="./src/images/add-user.svg"
+												title="Añadir estudiante"
+												alt="add user to course"
+											/>
+										</div>
+									</div>
+								</article>
+							</div>
+
+							<div class="col">
 								<article class="card position-relative shadow">
 									<div class="p-2 px-3 course-ribbon">
 										<span>15 Lecciones</span>
@@ -115,45 +159,7 @@
 								</article>
 							</div>
 
-							<div class="column">
-								<article class="card position-relative shadow">
-									<div class="p-2 px-3 course-ribbon">
-										<span>15 Lecciones</span>
-									</div>
-									<img
-										class="card-img-top"
-										src="./src/images/card-background.jpg"
-										alt="course image"
-									/>
-									<div class="card-body">
-										<h4 class="card-title fw-bold mb-0 fs-6">Introduccion al diseño UX/UI</h4>
-										<p class="card-text course-subtitle">Total de alumnos: 50</p>
-
-										<div class="d-flex justify-content-between mt-4">
-											<img
-												class="pointer"
-												src="./src/images/file-add.svg"
-												title="Añadir contenido"
-												alt="add file to course"
-											/>
-											<img
-												class="pointer"
-												src="./src/images/folder.svg"
-												title="Abrir contenidos de cursada"
-												alt="Open course folder"
-											/>
-											<img
-												class="pointer"
-												src="./src/images/add-user.svg"
-												title="Añadir estudiante"
-												alt="add user to course"
-											/>
-										</div>
-									</div>
-								</article>
-							</div>
-
-							<div class="column">
+							<div class="col">
 								<article class="card position-relative shadow">
 									<div class="p-2 px-3 course-ribbon">
 										<span>15 Lecciones</span>
@@ -192,9 +198,12 @@
 							</div>
 						</section>
 
-						<div class="d-md-none d-flex justify-content-center my-5">
-							<button class="btn btn-secondary">Crear curso</button>
-						</div>
+						<a
+							href="./course-creator.html"
+							class="d-inline-block d-md-none d-flex justify-content-center my-5"
+						>
+							<button class="btn btn-secondary p-2">Crear curso</button>
+						</a>
 					</div>
 
 					<div class="col-md-4">
