@@ -36,3 +36,28 @@
 	color: var(--grey);
 	font-weight: 500;
 }
+
+.student-course {
+	font-size: 10px;
+}
+
+.student-message {
+	font-size: 12px;
+}
+
+@media screen and (min-width: 700px) {
+	.message-subtitle {
+		font-size: 16px;
+	}
+
+	.student-name {
+		font-size: 18px;
+	}
+	.student-course {
+		font-size: 12px;
+	}
+
+	.student-message {
+		font-size: 14px;
+	}
+}
