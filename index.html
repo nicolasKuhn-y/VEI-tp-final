@@ -15,9 +15,9 @@
 		<link rel="stylesheet" href="./src/css/home.css" />
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light shadow py-2 py-md-4">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#">Navbar</a>
+				<img class="m-2 mx-md-4 my-md-0" src="./src/images/logo.svg" alt="logo ong" />
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -29,42 +29,129 @@
 				>
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Mis cursos</a>
-						</li>
-					</ul>
-
-					<div>
-						<button type="button" class="btn btn-primary">Primary</button>
-						<button type="button" class="btn btn-secondary">Secondary</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+					<div class="my-3 my-md-0 mx-md-3">
+						<a href="./dashboard.html" class="unstyled-anchor">
+							<button type="button" class="btn btn-primary">Iniciar sesion</button>
+						</a>
+					</div>
+					<div class="my-3 my-md-0 mx-md-3">
+						<button type="button" class="btn btn-secondary">Registrarse</button>
 					</div>
 				</div>
 			</div>
 		</nav>
 
-		<main class="container pt-4 px-2">
-			<section class="container text-center">
+		<main class="container-fluid pt-4">
+			<section class="container top-container text-center mt-5">
 				<h1 class="display-3 fw-bolder">
 					Crea cursos online de manera <span class="feature-decoration">sencilla</span>
 				</h1>
-				<p class="my-3">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae a, illum ratione perspiciatis
-					ducimus quis ad facere unde reprehenderit beatae sint magnam impedit aperiam! Animi.
+				<p class="my-4 feature-text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat corporis impedit nisi eos, nam
+					alias maiores, maxime praesentium magnam vel earum fugiat reiciendis nostrum, facilis minima
+					corrupti repellat! Laudantium, id.
 				</p>
 
-				<a href="./dashboard.html" class="btn btn-secondary">Empeza a crear</button>
+				<a href="./dashboard.html" class="unstyled-anchor">
+					<button class="btn btn-secondary">Empeza a crear</button>
+				</a>
+			</section>
+
+			<section class="mb-8 d-md-flex">
+				<div class="mb-4 text-center text-md-start d-md-flex flex-column justify-content-around">
+					<h2 class="fw-bold feature-title">
+						Te ayudamos a encontrar la mejor <span class="feature-decoration">Solucion</span>
+					</h2>
+
+					<p class="feature-text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem pariatur facere voluptatum
+						numquam vitae nobis asperiores odit expedita provident veniam inventore maxime, quis labore,
+						odio error. Animi possimus necessitatibus quidem voluptas expedita error quae vitae?
+					</p>
+
+					<a href="#" class="unstyled-anchor">
+						<button class="btn btn-primary">Conoce mas</button>
+					</a>
+				</div>
+
+				<div>
+					<img src="./src/images/feature-01.jpg" alt="estudiantes" />
+				</div>
+			</section>
+
+			<section class="mb-8 d-md-flex">
+				<div>
+					<img src="./src/images/feature-02.jpg" alt="estudiantes" />
+				</div>
+
+				<div class="ms-md-5 text-center text-md-start d-md-flex flex-column justify-content-around">
+					<h2 class="fw-bold feature-title">
+						La creacion de contenido nunca fue tan <span class="feature-decoration">facil</span>
+					</h2>
+
+					<p class="feature-text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem pariatur facere voluptatum
+						numquam vitae nobis asperiores odit expedita provident veniam inventore maxime, quis labore,
+						odio error. Animi possimus necessitatibus quidem voluptas expedita error quae vitae?
+					</p>
+
+					<a href="#" class="unstyled-anchor">
+						<button class="btn btn-primary">Conoce mas</button>
+					</a>
+				</div>
 			</section>
 		</main>
 
+		<footer class="bg-dark py-5 text-white">
+			<div class="container">
+				<div class="row g-2">
+					<div class="col-12 col-md-4">
+						<img class="m-2 mx-md-4 my-md-0" src="./src/images/logo.svg" alt="logo ong" />
+					</div>
+					<div class="col-12 col-md-8 mt-5 mt-md-0">
+						<h4 class="fw-bold">Buscanos en nuestras redes</h4>
+
+						<div class="row">
+							<ul class="col-12 col-md-6 list-unstyled">
+								<li class="my-3">
+									<i class="fa-brands fa-tiktok fa-lg"></i>
+									<span class="footer-text ms-2">Tiktok</span>
+								</li>
+								<li class="my-3">
+									<i class="fa-brands fa-twitter fa-lg"></i>
+									<span class="footer-text ms-2">Twitter</span>
+								</li>
+								<li class="my-3">
+									<i class="fa-brands fa-facebook fa-lg"></i>
+									<span class="footer-text ms-2">Facebook</span>
+								</li>
+							</ul>
+
+							<ul class="col-12 col-md-6 list-unstyled">
+								<li class="my-3">
+									<i class="fa-brands fa-linkedin fa-lg"></i>
+									<span class="footer-text ms-2">LinkedIn</span>
+								</li>
+								<li class="my-3">
+									<i class="fa-brands fa-instagram fa-lg"></i>
+									<span class="footer-text ms-2">Instagram</span>
+								</li>
+								<li class="my-3">
+									<i class="fa-brands fa-youtube fa-lg"></i>
+									<span class="footer-text ms-2">Youtube</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 			crossorigin="anonymous"
 		></script>
+		<script src="https://kit.fontawesome.com/227a11789b.js" crossorigin="anonymous"></script>
 	</body>
 </html>
