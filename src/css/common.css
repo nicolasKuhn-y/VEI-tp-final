@@ -101,7 +101,7 @@ h1 {
 	z-index: 1111;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
 	.sidebar {
 		min-height: 100vh;
 		position: initial;
