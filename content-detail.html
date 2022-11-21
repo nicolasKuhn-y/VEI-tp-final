@@ -1,80 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Dashboard</title>
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-			crossorigin="anonymous"
-		/>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="./src/css/common.css" />
-		<link rel="stylesheet" href="./src/css/dashboard.css" />
-	</head>
-	<body>
-		<main class="d-md-flex">
-			<!---MOBILE MENU-->
-			<div
-				class="d-flex sticky-top d-md-none container justify-content-between align-items-center shadow p-3 px-4"
-			>
-				<img src="./src/images/logo.svg" alt="logo ong" />
-				<i class="fa-solid fa-bars fa-2x sidebar-handler"></i>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Dashboard</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="./src/css/common.css" />
+	<link rel="stylesheet" href="./src/css/dashboard.css" />
+</head>
+
+<body>
+	<main class="d-md-flex">
+		<!---MOBILE MENU-->
+		<div class="d-flex sticky-top d-md-none  justify-content-between align-items-center shadow p-3 px-4">
+			<img src="./src/images/logo.svg" alt="logo ong" />
+			<i class="fa-solid fa-bars fa-2x sidebar-handler"></i>
+		</div>
+		<!---MOBILE MENU-->
+
+		<!--SIDEBAR-->
+		<div class="sidebar">
+			<div class="d-flex flex-column flex-shrink-0 text-white py-md-4">
+				<img class="d-none d-md-block mx-4" src="./src/images/logo.svg" alt="logo ong" width="50" />
+				<ul class="nav nav-pills flex-column mb-auto p-3">
+					<li class="sidebar-list-item nav-item py-2 my-2">
+						<a class="d-flex align-items-center gap-3 px-2 nav-link" href="./dashboard.html">
+							<i class="fa-solid fa-house sidebar-icon"></i>
+							<span class="sidebar-link">Cursos</span>
+						</a>
+					</li>
+
+					<li class="sidebar-list-item nav-item py-2 my-2">
+						<a class="d-flex align-items-center gap-3 px-2 nav-link" href="#">
+							<i class="fa-solid fa-user sidebar-icon"></i>
+							<span class="sidebar-link">Estudiantes</span>
+						</a>
+					</li>
+
+					<li class="sidebar-list-item nav-item py-2 my-2">
+						<a class="d-flex align-items-center gap-3 px-2 nav-link" href="#">
+							<i class="fa-solid fa-message sidebar-icon"></i>
+							<span class="sidebar-link">Mensajes</span>
+						</a>
+					</li>
+				</ul>
 			</div>
-			<!---MOBILE MENU-->
+		</div>
+		<!--SIDEBAR-->
 
-			<!--SIDEBAR-->
-			<div class="sidebar">
-				<div class="d-flex flex-column flex-shrink-0 text-white py-md-5">
-					<img class="d-none d-md-block mx-4" src="./src/images/logo.svg" alt="logo ong" width="50" />
-					<ul class="nav nav-pills flex-column mb-auto p-3">
-						<li class="sidebar-list-item nav-item py-2 my-2">
-							<a class="d-flex align-items-center gap-3 px-2 nav-link" href="./dashboard.html">
-								<i class="fa-solid fa-house sidebar-icon"></i>
-								<span class="sidebar-link">Cursos</span>
-							</a>
-						</li>
+		<!--MAIN-CONTENT-->
+		<section class="container mt-4 ms-md-5 me-md-2">
+			<h1 class="fw-bold">Introduccion al diseño UX/UI</h1>
 
-						<li class="sidebar-list-item nav-item py-2 my-2">
-							<a class="d-flex align-items-center gap-3 px-2 nav-link" href="#">
-								<i class="fa-solid fa-user sidebar-icon"></i>
-								<span class="sidebar-link">Estudiantes</span>
-							</a>
-						</li>
+			<p>Aprende, conoce y aplica técnicas de User Experience Design y Design Thinking - Curso UX UI Design +
+				Diseño Web y Mobile</p>
 
-						<li class="sidebar-list-item nav-item py-2 my-2">
-							<a class="d-flex align-items-center gap-3 px-2 nav-link" href="#">
-								<i class="fa-solid fa-message sidebar-icon"></i>
-								<span class="sidebar-link">Mensajes</span>
-							</a>
-						</li>
-					</ul>
+			<div class="row mt-5">
+				<div class="video col-12 col-lg-8">
+					<video class="w-100" controls>
+						<source src="./src/images/WebHD_720p.mp4">
+					</video>
+
+					<div class="px-2 py-2 mb-4">
+						<!--DESKTOP-->
+						<div class="d-lg-flex aling-item-center justify-content-evenly d-none  ">
+							<p style="margin: 0!important;cursor:pointer;" class="fw-bold">Descripción</p>
+							<p style="margin: 0!important;">Preguntas y Respuestas</p>
+							<p style="margin: 0!important;">Valoración</p>
+						</div>
+
+						<!--MOBILE-->
+						<div id="carouselExampleControlsNoTouching" class="carousel slide d-lg-none"
+							data-bs-interval="false">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<div class="d-flex justify-content-evenly gap-2">
+										<p style="margin: 0!important;cursor:pointer;" class="contenido">Contenido del
+											curso</p>
+										<p style="margin: 0!important;cursor:pointer;" class="fw-bold descripcion">
+											Descripción</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="d-flex justify-content-evenly gap-2">
+										<p style="margin: 0!important;">Preguntas y Respuestas</p>
+										<p style="margin: 0!important;">Valoración</p>
+									</div>
+								</div>
+							</div>
+							<button style="width: 0!important;" class="carousel-control-prev" type="button"
+								data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+								<span class="text-dark"><i class="fa-solid fa-angle-left"></i></span>
+							</button>
+							<button style="width: 0!important;" class="carousel-control-next" type="button"
+								data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+								<span class="text-dark"><i class="fa-solid fa-angle-right"></i></span>
+							</button>
+						</div>
+					</div>
+
+					<div class="mt-4 d-lg-block descripcion-text">
+						<h4 class="fw-bold">Descripción</h4>
+						<p>Aprendé, conocé y aplicá técnicas User Experience Design para crear productos y servicios
+							innovadores. También aprende diseño web y mobile con Figma.</p>
+						<h6 class="fw-bold">¡Convertite en un Diseñador UX!</h6>
+						<p>Si deseas unirte a uno de los campos de diseño de más rápido crecimiento, no busques más,
+							este es el curso para vos. Este curso llevará las cosas desde el principio; te va a ofrecer
+							un panorama completo para mostrarte cómo embarcarte en una nueva carrera en el diseño UX.
+						</p>
+					</div>
+				</div>
+
+				<div class="modulos col-lg-4 mb-4 d-lg-block d-none px-0" style="height: max-content;border: 1px solid #e4e6eb">
+					<div class="d-lg-block d-none bg-white d-flex justify-content-between align-items-baseline mb-0 px-3 py-3" style="border-bottom: 1px solid #e4e6eb;">
+						<h5 style="margin: 0 !important;" class="fw-bold">Contenido del curso</h5>
+					</div>
+					<div class="accordion accordion-flush" id="accordionFlushExample">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingOne">
+								<button class="accordion-button collapsed" style=" border-bottom: 1px solid #e4e6eb;" type="button" data-bs-toggle="collapse"
+									data-bs-target="#flush-collapseOne" aria-expanded="true"
+									aria-controls="flush-collapseOne">
+									Módulo 1
+								</button>
+							</h2>
+							<div id="flush-collapseOne" class="accordion-collapse collapse"
+								aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+								<div class="accordion-body">
+									<i class="fa-solid fa-file"></i> Archivo 1
+								</div>
+							</div>
+							<div id="flush-collapseOne" class="accordion-collapse collapse"
+								aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+								<div class="accordion-body">
+									<i class="fa-solid fa-circle-play"></i> Video 1
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+					<div class="accordion accordion-flush" id="accordionFlushExample2">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingTwo">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+									data-bs-target="#flush-collapseTwo" aria-expanded="true"
+									aria-controls="flush-collapseTwo">
+									Módulo 2
+								</button>
+							</h2>
+							<div id="flush-collapseTwo" class="accordion-collapse collapse"
+								aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample2">
+								<div class="accordion-body">
+									<i class="fa-solid fa-circle-play"></i> Video 2
+								</div>
+							</div>
+
+							<div id="flush-collapseTwo" class="accordion-collapse collapse"
+								aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample2">
+								<div class="accordion-body">
+									<i class="fa-solid fa-circle-play"></i> Video 3
+								</div>
+							</div>
+
+						</div>
+					</div>
+
 				</div>
 			</div>
-			<!--SIDEBAR-->
 
-			<!--MAIN-CONTENT-->
-			<section class="container mt-4 mx-md-5">
-				<h1 class="fw-bold">BEST CURSO EVER</h1>
-			</section>
 
-			<!--MAIN-CONTENT-->
-		</main>
+		</section>
 
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-			crossorigin="anonymous"
-		></script>
-		<script src="https://kit.fontawesome.com/227a11789b.js" crossorigin="anonymous"></script>
-		<script src="./src/js/sidebar.js"></script>
-	</body>
+	</main>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+	</script>
+	<script src="https://kit.fontawesome.com/227a11789b.js" crossorigin="anonymous"></script>
+	<script src="./src/js/sidebar.js"></script>
+	<script src="./src/js/content-detail.js"></script>
+
+</body>
+
 </html>
