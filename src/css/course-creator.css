@@ -1,7 +1,6 @@
 .container-drop{
 max-width: 800px;
 width: 100%;
-padding: 30px;
 border-radius: 20px;
 }
 
@@ -71,4 +70,8 @@ border-radius: 20px;
     .container-drop{
         padding: 0px!important;
     }
+}
+
+.fa-grip-lines{
+    cursor: move;
 }
